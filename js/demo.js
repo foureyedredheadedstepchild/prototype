@@ -3,7 +3,7 @@
   window.onscroll = function() {
     [].slice.call(parallax).forEach(function(el, i) {
       
-	  var windowYOffset = window.pageYOffset - 2823 / 2, elementOffset = el.offsetTop, elBackgrounPos = "50% " + (windowYOffset - elementOffset) * speed+ "px";
+	  var windowYOffset = window.pageYOffset, elementOffset = el.offsetTop / 2, elBackgrounPos = "50% -" + (windowYOffset) * speed + "px";
       el.style.backgroundPosition = elBackgrounPos;
     });
   };
