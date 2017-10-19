@@ -17,7 +17,7 @@
 }
 
 .parallax {
-  background-image: url("images/parallax.jpg");
+  background-image: url("../images/parallax.jpg");
   min-height: 100%;
 }
 
