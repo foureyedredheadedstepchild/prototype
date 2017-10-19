@@ -130,6 +130,33 @@ body {
 
 
 
+.section-parallax {
+
+}
+
+
+
+.background-one {
+	
+  position: relative;
+  opacity: 0.65;
+  /*
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  
+ background-position: 50% 50%;
+
+
+ /* padding: 75px 0;*/
+  background-image: url("../images/parallax.jpg");
+  min-height: 100%;
+}
+
+
+
 
 
 .caption {
