@@ -35,7 +35,7 @@ body {
 }
 
 #wrapper {
-	padding: 20px;
+	/*padding: 20px;*/
 	width: 50%;
 	height: 100%;		
     margin: auto; 
@@ -109,13 +109,24 @@ body {
 
 
 
+#logo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   margin-top: -250px; /* Half the height */
+   margin-left: -250px; /* Half the width */
+}
+
+
 .container {
 	/* float: left;*/
 	position: relative;	
 	width: 94%;
-	margin: auto;
-	margin: 8px auto 0px auto;
-	padding: 4px 13px 13px 6px;
+	/*margin: auto;*/
+	margin: 0 auto 8px auto;
+	/*padding: 4px 13px 13px 6px;*/
 	background-color: hsla(0, 0%, 100%, 0.1);
 	border-radius: 5px;
 	line-height: 1.7;
