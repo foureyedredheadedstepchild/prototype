@@ -66,10 +66,14 @@ body {
   */
 }
 
-.header p { background-color: hsla(0, 0%, 100%, 0.2); }
+.header p { 
+	background-color: hsla(0, 0%, 100%, 0.2); 
+}
 
 .header,
-.header:before { background: 50% 50% / cover; }
+.header::before { 
+	background: 50% 50% / cover; 
+}
 
 .header::before {
   content: "";
@@ -106,58 +110,32 @@ body {
 
 #title {
 	position: relative;
-    font-weight: normal;
-    letter-spacing: 0.1em;
-    text-align: center;
-    margin: 0;
-    /* padding: 1em 0; */
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 0;
+	/* padding: 1em 0; */
 }
 
 
 
 .container {
- /* float: left;*/
-  width: 94%;
-  margin: auto;
-  padding: 4px 13px 13px 6px;
-  background-color: hsla(0, 0%, 100%, 0.1);
-  border-radius: 5px;
-  line-height: 1.7;
-/*  max-width: 32em;
-  padding: 5% calc(50% - 16em) 35%;*/
-  position: relative;
-  z-index: 2;
+	/* float: left;*/
+	position: relative;	
+	width: 94%;
+	margin: auto;
+	padding: 4px 13px 13px 6px;
+	background-color: hsla(0, 0%, 100%, 0.1);
+	border-radius: 5px;
+	line-height: 1.7;
+	/*  max-width: 32em;
+	padding: 5% calc(50% - 16em) 35%;*/
+
+	z-index: 2;
 }
 
 
-
-.section-parallax {
-
-}
-
-
-
-.background-one {
-	
-  position: relative;
-  opacity: 0.65;
-  /*
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  */
-  
- background-position: 50% 50%;
-
-
- /* padding: 75px 0;*/
-  background-image: url("../images/parallax.jpg");
-  min-height: 100%;
-}
-
-
-
+.section-parallax {}
 
 
 .caption {
@@ -178,7 +156,7 @@ body {
 }
 
 .copywrong {
-  // ...
+  /* ... */
 }
 
 
