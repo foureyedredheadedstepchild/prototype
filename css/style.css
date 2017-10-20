@@ -157,7 +157,8 @@ body {
 }
 footer {
 	clear: both;
-    padding: 13px 15px;
+    /*padding: 13px 15px;*/
+	  margin-bottom: 0;
 }
 
 
