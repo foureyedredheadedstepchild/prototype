@@ -55,7 +55,7 @@ body {
 	-webkit-transform-style: inherit;
 	transform-style: inherit;
 	
-	/*transform: translateY(0px);*/
+	transform: translateY(0px);
 }
 
 .header p { 
@@ -81,12 +81,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
  
+  transform: translateY(0px);
 	
   -webkit-transform-origin: center center 0;
   -webkit-transform: translateZ(-1px) scale(2);
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
-  
+
   z-index: -1;
   min-height: 50vh;
 }
