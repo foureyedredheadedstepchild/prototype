@@ -55,7 +55,7 @@ body {
 	-webkit-transform-style: inherit;
 	transform-style: inherit;
 	
-	transform: translateY(0px);
+	/*transform: translateY(0px);*/
 }
 
 .header p { 
