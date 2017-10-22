@@ -96,11 +96,11 @@ body {
   right: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
+  /*height: 100%; */
   background-color: #000;
   background-image: url(../images/parallax.jpg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%), url('../images/parallax.jpg');
-  background-size: cover;
+  /*background-size: cover;*/
   background-repeat: no-repeat;
  	
   -webkit-transform-origin: center center 0;
