@@ -274,20 +274,3 @@ a.btt:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-@-ms-viewport { 
-    width: device-width;
-    initial-scale: 1;
-    zoom: 1;
-    min-zoom: 1;
-    /*max-zoom: 3;*/
-    user-zoom: fixed;
-}
-
-@viewport {
-    width: device-width;
-    initial-scale: 1;
-    zoom: 1;
-    min-zoom: 1;
-    /*max-zoom: 3;*/
-    user-zoom: fixed;
-}
