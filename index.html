@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 	<head>
 	  <title>In Development...</title>
 	  <meta charset="utf-8" />
@@ -7,12 +7,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 																														   
         <link href="favicon.ico" rel="icon" type="image/x-icon" /> 
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+        <link rel="canonical" href="https://foureyedredheadedstepchild.com/"/>
+		
+		<meta name="description" content="" />
 		
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 		<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	</head>
-		<body>
+		<body class="hardware-acceleration">
 
 			<div id="wrapper">
              
@@ -62,23 +66,31 @@
 
 			
 			<script>
+			
+				
 			$(document).ready(function() {
 				
-				$(window).bind('scroll', function(e) {
-					parallax();
-				});
+				$('.header').parallax({speed : 0.2});
 				
-				function parallax() {
-					//$('.vertical').css('top','+' + ((scrolledY*1.3)) + 'px');
-					//$('.horizontal1').css('left','+' + ((scrolledY*0.2)) + '%');
-					//$('.opacity').css('opacity','0' + (scrolledY*0.001));
-				}
-				
-				$(window).scroll(function(e) {
-				  var scrollTop  = $(window).scrollTop(), s = scrollTop / 2;
-				  $('.header').css({ transform: "translateY(" + (s * 0.5) + "px)" });
+				// Animate scroll clicking nav items
+				$('nav').find("a").click(function(e) {
+				  e.preventDefault();
+				  var $href = $(this).attr('href');
+				  $('html, body').stop().animate({
+					scrollTop: $($href).offset().top
+				  }, 1000);
+				  return false;
 				});
-			});			
+
+				
+				
+			
+			/*
+				$(window).scroll(function() {
+				  var scrollTop  = $(window).scrollTop(), y = scrollTop / 2;				
+				  $('.header').css({ transform: 'translateY(' + (y * 0.5) + 'px)' });
+				}); */
+			});		
 			</script>
 			
 		</body>
