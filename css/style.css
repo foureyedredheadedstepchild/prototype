@@ -287,10 +287,4 @@ a.btt:hover {
 }
 
 
-@media screen and (orientation: portrait) {
-  img.logo {  max-width: 86vw; }
-}
 
-@media screen and (orientation: landscape) {
-  img.logo {  max-width: 86vw; }
-}
