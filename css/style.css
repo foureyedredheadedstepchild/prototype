@@ -16,7 +16,9 @@
 
 * { margin:0; padding:0; }
 
-
+div {
+  box-sizing: border-box;
+  }
 html { 
 	height: 100%;
 /*	overflow: hidden;*/
