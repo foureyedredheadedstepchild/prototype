@@ -74,7 +74,7 @@ body {
 .header {
 	box-sizing: border-box;
 	height: 100%;	
-	min-height: 25vh;
+	/*min-height: 25vh;*/
 	
 	-webkit-transform-style: inherit;
 	transform-style: inherit;
@@ -110,7 +110,7 @@ body {
   transform: translateZ(-1px) scale(2);
 
   z-index: -1;
-  min-height: 50vh;
+  /*min-height: 50vh;*/
 }
 
 .header * {
