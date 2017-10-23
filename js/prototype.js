@@ -15,7 +15,7 @@
 					return;
 				}
 				var y = Math.round((offset - scrollTop) * settings.speed);
-				$this.css('transform', 'translateY(' + y + 'px)'); 
+				$this.css('transform', 'translateY(' + -y + 'px)'); 
 			});
 		});
 	};
