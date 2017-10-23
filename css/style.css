@@ -16,11 +16,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
 
-
-div {
-  box-sizing: border-box;
-  }
-
+.preload * { -webkit-transition:none !important; -moz-transition:none !important; -ms-transition:none !important; -o-transition:none !important; }
 
 html { 
 	height: 100%;
@@ -140,23 +136,29 @@ body {
 }
 
 
+.logo {
+	/*
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 437px;
+	height: 54px;
+	margin-top: -27px; 
+	margin-left: -218.5px; 	
+	*/
+}
 
 .logo {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-  /*
-	width: 437px;
-   height: 54px;
-   margin-top: -27px; 
-   margin-left: -218.5px; 
-	*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .logo img {
   /*width: 50%;*/
   max-width: 86vw;
@@ -265,6 +267,7 @@ a.btt {
   border-radius: 30px;
   box-shadow: 3px 3px 10px rgba(23, 25, 25, 0.2);
   transform: translatey(0%);
+  text-decoration: none; 
 }
 
 a.btt .fa {
