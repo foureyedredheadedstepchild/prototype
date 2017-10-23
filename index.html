@@ -32,15 +32,23 @@
 		<link href="./css/reset.css" rel="stylesheet" type="text/css" />
 		
 		<link href="./css/style.css" rel="stylesheet" type="text/css" />
+		
+		<link href="./css/module.css" rel="stylesheet" type="text/css" />
+		
 	</head>
-		<body class="preload">
-			
-
+		<body class="preload hardware-acceleration">
+<!--		
+		<div class="debug">
+        	<label><input type="checkbox"> Debug</label>
+        </div>
+-->
 	
 	
-			<div id="wrapper">
+			<div class="wrapper">
              
-				<div class="header"></div> 
+				<section class="module parallax parallax-1">
+				
+				</section> 
 <!--
 				<div class="caption">
 					<span class="border">DEMO</span>
@@ -63,7 +71,7 @@
 					<p> Section content...</p>
 				
 			
-					<section id="content">
+					<section class="module content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
 Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. 
@@ -79,18 +87,20 @@ Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae phar
 	
 
 			<!--	<section id="content"></section>	-->			
-				<section id="middle">
+				<section class="module middle">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
 Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.</p>
 					
 				</section>							
-			
+	
 			</div>
 			
-			
+			<div class="wrapper">
+				<section class="module parallax parallax-2"></section>
+			</div>
 					
-			  <div class="container">      
+			  <div class="container d">      
 				<footer>
 					<div class="copywrong">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script> Sideways Ice Cream Cone. All rights reserved.</div>
 				</footer>   
@@ -114,7 +124,7 @@ Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In
 			$(document).ready(function() {
 
 				
-				$('.header').parallax({speed : 0.2});
+				$('.parallax').parallax({speed : 0.2});
 				
 				// Animate scroll clicking nav items
 				$('nav').find("a").click(function(e) {
@@ -132,7 +142,7 @@ Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In
 			/*
 				$(window).scroll(function() {
 				  var scrollTop  = $(window).scrollTop(), y = scrollTop / 2;				
-				  $('.header').css({ transform: 'translateY(' + (y * 0.5) + 'px)' });
+				  $('.parallax').css({ transform: 'translateY(' + (y * 0.5) + 'px)' });
 				}); */
 				
 				
@@ -141,9 +151,11 @@ var scrolled = 4;
   $(window).scroll(function() {
     if ($(window).scrollTop() > scrolled) {
         $('a.btt').fadeIn('slow');
+		
     } 
     else {
     	$('a.btt').fadeOut('slow');
+		
     }
   });
 				
@@ -154,8 +166,19 @@ $('a.btt').click(function() {
 return false;
 });	
 			});		
+				
+			var debugInput = document.querySelector("input");
+			function updateDebugState() {
+				document.body.classList.toggle('debug-on', debugInput.checked);
+			}
+			debugInput.addEventListener("click", updateDebugState);
+			updateDebugState();
 			</script>
-			      <script src="https://use.fontawesome.com/4b41bd34db.js"></script>
+	
+	
+		   <script src="https://use.fontawesome.com/4b41bd34db.js"></script>
 	       <a href="#" class="btt"><i class="fa fa-chevron-up"></i></a>
+	
+	
 		</body>
 </html>

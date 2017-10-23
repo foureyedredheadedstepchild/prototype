@@ -1,0 +1,79 @@
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+section.module.parallax {
+	box-sizing: border-box;
+	height: 100%;	
+	-webkit-transform-style: inherit;
+	transform-style: inherit;	
+	transform: translateY(0px);
+}
+
+section.module.parallax, 
+section.module.parallax:before { 
+	background: 50% 50% / cover; 
+}
+
+section.module.parallax:before {
+	content: "";
+	position: fixed; 
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height:100%;
+
+	background-color: #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	-webkit-transform-origin: center center 0;
+	transform-origin: center center 0;
+	transform: translateY(0px);
+	-webkit-transform: translateZ(-1px) scale(2);
+	transform: translateZ(-1px) scale(2);
+
+	z-index: -1;
+	
+	top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+section.module.parallax-1:before {
+	background-image: url(../images/parallax.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%), url('../images/parallax.jpg');
+}
+
+section.module.parallax-2:before {
+	background-image: url(../images/20150601_.png);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%), url('../images/20150601_.png');
+}
+
+section.module.parallax * {
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0;
+/*  padding: 1em 0;*/
+}
+
+section.module.blur-filter {
+  -webkit-filter:blur(2px);
+  -moz-filter:blur(2px);
+  -o-filter:blur(2px);
+  -ms-filter:blur(2px);
+  filter:blur(2px);
+}
