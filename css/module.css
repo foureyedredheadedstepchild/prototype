@@ -45,7 +45,7 @@ section.module.parallax:before {
 
 section.module.parallax-1 {
 	background-image: url(../images/parallax.png);
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -6%, rgb(0, 0, 0) 100%), url('../images/parallax.jpg');
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -6%, rgb(0, 0, 0) 100%), url('../images/parallax.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
