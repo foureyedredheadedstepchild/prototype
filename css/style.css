@@ -62,7 +62,7 @@ body {
 }
 
 
-.fixedPos {
+.fixed {
 	position: fixed;
 	top: 0;
 	width: 1px;
@@ -299,30 +299,4 @@ a.btt:hover {
   transform: translateY(-10%);
   transition: transform 0.3s ease-in-out;
   background-color: #fff
-}
-
-
-
-
-.debug {
-    position: fixed;
-    top: 0;
-    left: .5em;
-    z-index: 999;
-    background: rgba(0,0,0,.85);
-    color: #fff;
-    padding: .5em;
-    border-radius: 0 0 5px 5px;		 
-}
-.d {
-	-webkit-perspective: 1px;
-	perspective: 1px;	
-	-webkit-transform: scale3d(1, 1, 1); 
-	transform: scale3d(1, 1, 1);	
-	transform: translate3d(0, 0, 0);	
-}
-.debug-on section.module, 
-.debug-on .logo {	  
-    -webkit-transform: translate3d(100px, 0, -100px) rotateY(30deg);
-     transform: translate3d(0px, 0, -1.5px) rotateY(0.05deg);
 }
