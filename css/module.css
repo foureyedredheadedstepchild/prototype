@@ -1,16 +1,38 @@
+@charset "utf-8";
+
+
 section.module:last-child {
   margin-bottom: 0;
 }
 
 
-
 section.module.parallax {
-	height: 100%;	
+	will-change: transform;
+/*
+	transition: transform 0.1s;
+*/
+	height: 100vh;
 	
 	-webkit-transform-style: inherit;
 	transform-style: inherit;	
+/*	
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-ms-transition-property: -ms-transform;
+	-o-transition-property: -o-transform;
+	transition-property: transform;
 	
-    transform: translateY(0px);
+    transition: transform 0.2s ease;
+*/	
+/*
+	-webkit-transform: translate3d(0, 0, 0);	
+	-moz-transform: translate3d(0, 0, 0);	
+    transform: translate3d(0, -50px, 0);
+*/
+
+  
+	transform: translateY(0px);
+
 }
 
 section.module.parallax, 
@@ -19,7 +41,7 @@ section.module.parallax:before {
 }
 
 section.module.parallax:before {
-	content: "";
+	content: " ";
     position: relative;
 	display: block;
 	width: 100vw;
@@ -34,6 +56,7 @@ section.module.parallax:before {
 	
 	-webkit-transform: translateZ(-1px) scale(2);
 	transform: translateZ(-1px) scale(2);
+		
 /*	
 	top: 50%;
     left: 50%;
@@ -44,30 +67,105 @@ section.module.parallax:before {
 }
 
 section.module.parallax-1 {
+/*
 	background-image: url(../images/parallax.png);
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -6%, rgb(0, 0, 0) 100%), url('../images/parallax.png');
+*/
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -60%, rgb(0, 0, 0) 100%), url('../images/parallax.png');
+/*
+	background-size: auto 100% 100%;
+*/
+/*
+	background-attachment: fixed;
+*/
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #000;
+	
+/*	background-attachment:scroll;*/
 }
 
 section.module.parallax-2 {
-	background-image: url(../images/sheepicide.png);
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -6%, rgb(0, 0, 0) 100%), url('../images/sheepicide.png');
+	/*background-image: url(../images/sheepicide.png);*/
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0) -60%, rgb(0, 0, 0) 100%), url('../images/sheepicide.png');
+	/*background-attachment: fixed;*/
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #000;
+	
+	/*background-attachment:scroll;*/
 }
 
 section.module.parallax * {
-  font-weight: normal;
-  letter-spacing: 0.1em;
-  text-align: center;
-  margin: 0;
-/* padding: 1em 0; */
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 0;
+/* 
+    padding: 1em 0; 
+*/
 }
+
+
+section.module.content {
+/*	
+	width: 480px;
+	float: left;
+*/
+	padding: 13px 15px;
+	clear: both;
+}
+
+section.module.middle {
+/*
+	width: 400px; 
+	float: left;
+*/
+	padding: 13px 15px;
+/*
+	margin: 0px 5px 5px 5px;
+*/
+}
+
+section.module.sidebar {
+	width: 948px;
+	padding: 5px 15px;
+	float: left;
+}
+
+footer {
+	clear:both !important;
+	margin: -30px auto 0 auto;
+    padding: 13px 15px;
+}
+
+
+.content {
+/*
+	background: #f8f8f8;
+*/
+}
+
+#sidebar {
+/*
+	background: #f0efef;
+*/
+}
+
+header, .content, .middle, #sidebar {
+/*
+	margin-bottom: 5px;
+*/
+}
+
+#wrapper, header, .content, .middle, #sidebar, footer {
+/*	
+	border: solid 1px #ccc; 
+*/
+}
+
+
 
 section.module.blur-filter {
   -webkit-filter:blur(2px);
