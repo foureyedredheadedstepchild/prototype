@@ -1,15 +1,3 @@
-
-;(function($) {
-	'use strict';
-	$.fn.isInViewport = function() {
-	  var offsetTop = $(this).offset().top;
-	  var outerHeight = offsetTop + $(this).outerHeight();
-	  var scrollTop = $(window).scrollTop();
-	  var height = scrollTop + $(window).height();
-	  return outerHeight > scrollTop && offsetTop < height;
-	};
-})(jQuery);
-
 ;(function($) {
 	'use strict';
 	$.fn.parallax = function(options) {
