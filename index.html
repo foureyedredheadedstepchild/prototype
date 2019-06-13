@@ -37,9 +37,9 @@
 			
 			<div class="wrapper">            
 				<section class="module parallax parallax-1"></section> 
-				<div class="logo"><img src="images/logo.png" alt="" /></div>					
+									
 			</div>
-		
+		<div class="logo"><img src="images/logo.png" alt="" /></div>
 			<div class="container">											
 				<h3 style="text-align:center;">Section Title</h3>
 				<p> Section content...</p>
@@ -80,8 +80,9 @@
 			
 		<script>
 			$(document).ready(function() {				  
-				$('section.module.parallax-1').parallax({speed : 0.6});
-				$('section.module.parallax-2').parallax({speed : 0.2});	
+				$('section.module.parallax-1').parallax({depth : -0.2});
+				/*$('.logo').parallax({depth : 0.2});*/
+				$('section.module.parallax-2').parallax({depth : -0.2});	
 
 				// Animate scroll clicking nav items
 				$('nav').find("a").click(function(e) {
