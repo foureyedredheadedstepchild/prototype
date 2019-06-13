@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@font-face { font-family: 'default'; src: url('../font/default/default.eot'); src: url('../font/default/default.eot?#iefix') format('embedded-opentype'), url('../font/default/default.woff2') format('woff2'), url('../font/default/default.woff') format('woff'), url('../font/default/default.ttf') format('truetype'), url('../font/default/default.svg#default') format('svg'); font-weight: normal; font-style: normal; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -266,6 +268,28 @@ body {
 
 .copywrong {
   /* ... */
+}
+
+
+
+.button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 437px;
+	height: 54px;
+	margin-top: -27px; 
+	margin-left: -218.5px; 	
+	/*
+	display: inline-block;
+	padding: 3px 5px;
+	border: 1px solid #000;
+	background: #eee;
+	*/
+	font-family: 'default'; 
+	font-size: 27px;
+	color:#fff; 
+	text-decoration:none;
 }
 
 
