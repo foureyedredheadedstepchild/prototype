@@ -135,7 +135,6 @@ body {
 
 
 .logo {
-	/*
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -143,10 +142,10 @@ body {
 	height: 54px;
 	margin-top: -27px; 
 	margin-left: -218.5px; 	
-	*/
 }
 
 .logo {
+	/*
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -154,8 +153,12 @@ body {
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+*/
+	/*transform: translate(-50%, -50%);*/
 	
+/*	transform: translateX(-50%);
+	transform: translateY(-50%);
+	*/
 	  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
